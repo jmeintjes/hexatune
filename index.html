@@ -10,6 +10,8 @@
       const hexatuner = new Hexatune();
       hexatuner.init();
       hexatuner.getUserMedia();
+      hexatuner.subscribe(window);
+      window.addEventListener('hexatune', (event) => console.log(event.detail.output));
     }
   </script>
   <title>Hextune Test</title>
